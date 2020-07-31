@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styleProduct.css">
-    <link rel="stylesheet" href="./css/icon-font.css">
+    <link rel="stylesheet" href="./static/CSS/styleProduct.css">
+    <link rel="stylesheet" href="./static/CSS/icon-font.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -17,7 +17,7 @@
 
 <body>
     <section class="header">
-        <a href="#"><img href="#" src="img/logo.png" class="header__logo"></img></a>
+        <a href="#"><img href="#" src="./static/img/logo.png" class="header__logo"></img></a>
 
         <div class="header__container">
             <nav class="nav-bar u-margin-bottom-big">
@@ -29,7 +29,7 @@
                     <li><a href="#">Orange</a></li>
                 </ul>
             </nav>
-            <a href="#" class="butn">Explore More &rarr;</a>
+            <a href="#" class="button button--white">Explore More &rarr;</a>
         </div>
 
     </section>
@@ -45,8 +45,8 @@
                 <div class="login-register-container">
                     <a href="#">Login</a>
                     <a href="#">Register</a>
-                    <a href="#"><img src="./img/basic_heart.png" alt="heart"></i></a>
-                    <a href="#"><img src="./img/ecommerce_cart_download.png" alt="cart"></a>
+                    <a href="#"><img src="./static/img/basic_heart.png" alt="heart"></i></a>
+                    <a href="#"><img src="./static/img/ecommerce_cart_download.png" alt="cart"></a>
                 </div>
             </div>
         </div>
@@ -54,44 +54,194 @@
         <h1 class="heading-primary u-margin-bottom-medium">
             Welcome to XCollab
         </h1>
-        <div class="container-full">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-6 mb-4 margin-top">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="./img/hero-slide2.webp" alt="">
-                        <a href="#" class="hero-carousel__slideOverlay">
-                            <h3>Wireless Headphone</h3>
-                            <p>Accessories Item</p>
-                        </a>
+        <div class=" container-full">
+            <div class="welcome">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/hero-slide2.webp" alt="">
+                            <a href="#" class="hero-carousel__slideOverlay">
+                                <h3>Wireless Headphone</h3>
+                                <p>Accessories Item</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4 margin-top">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="./img/hero-slide3.webp" alt="">
-                        <a href="#" class="hero-carousel__slideOverlay">
-                            <h3>Magical Speaker</h3>
-                            <p>Accessories Item</p>
-                        </a>
+    
+                    <div class="col-lg-4 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/hero-slide3.webp" alt="">
+                            <a href="#" class="hero-carousel__slideOverlay">
+                                <h3>Magical Speaker</h3>
+                                <p>Accessories Item</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4 margin-top">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="./img/adidas.png" alt="">
-                        <a href="#" class="hero-carousel__slideOverlay">
-                            <h3>Adidas NMD</h3>
-                            <p>Shoe Item</p>
-                        </a>
+    
+                    <div class="col-lg-4 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/adidas.png" alt="">
+                            <a href="#" class="hero-carousel__slideOverlay">
+                                <h3>Adidas NMD</h3>
+                                <p>Shoes Item</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="heading-secondary u-margin-top-big">
-            <span>Popular Item in the marker</span>
+        <div class="heading-secondary u-margin-top-big u-margin-bottom-medium">
+            <span>Popular Items in the marker</span>
             <h2>Trending <span>Products</span></h2>
         </div>
+
+        <div class="container-full u-margin-bottom-medium">
+            <div class="trending">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/watch.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Quartz Belt Watch</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/wallet.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Quizvert Perfume</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/skincare.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Women Facewash</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/lamp.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Room Flash Light</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/bag.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Essential Bag</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/toycar.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">ToyCar</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/speaker.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Bluetooth Speaker</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 mb-4 margin-top">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./static/img/apple.webp" alt="">
+                            <ul class="card-product__imgOverlay">
+                                <li><i class="icon-basic-home"></i></li>
+                                <li><i class="icon-basic-ipod"></i></li>
+                                <li><i class="icon-basic-laptop"></i></li>
+                            </ul>
+                            <div class="card-body">
+                                <p>Accessories</p>
+                                <h4 class="card-title">Apple Blabla</h4>
+                                <p class="card-text">$150.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-full u-margin-top-big">
+            <div class="cover">
+                <div class="cover__text-box">
+                    <h1>Up To 50% Off</h1>
+                    <p class="cover__text-1">Winter Sale</p>
+                    <p class="cover__text-2">He'd let her be herself with her stuffs</p>
+                    <a href="#" class="button button--blue u-margin-top-small">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
 
 </body>
