@@ -1,0 +1,371 @@
+*,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav-bar */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 30px;
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover {
+    color: darkred !important;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* SLIDER */
+#slider {
+    width: 100%;
+}
+
+.carousel-inner {
+    display: inline-block;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+/* ABOUT */
+#about {
+    padding: 50px 0;
+    color: #555;
+}
+
+#about .btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    color: #B22222;
+    border: none;
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.61);
+    transition: all 0.3s;
+}
+
+#about .btn:hover {
+    background-color: #B22222;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.61);
+    transform: translateY(-10px);
+}
+
+#about .btn:active {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px black;
+}
+
+.about__content {
+    padding-top: 20px;
+}
+
+.progress:not(:last-child) {
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: darkred !important;
+    border-radius: 16px;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* SERVICES */
+#services {
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/gucci1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#services h1::after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto;
+}
+
+.services p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services {
+    margin-top: 40px;
+}
+
+.col-md-3 {
+    transition: all 0.5s;
+}
+
+.services .col-md-3:hover{
+    background-color: #e9967aa4;
+    color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.services .col-md-3:hover .icon {
+    border: 1px solid black;
+}
+.services .col-md-3:hover p {
+    color: black;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* TEAM MEMBERS */
+#team {
+    padding: 50px 0;
+    color: #555;
+}
+
+#team h1 {
+    text-align: center;
+}
+
+#team .fa {
+    height: 25px;
+    width: 25px;
+    color: salmon;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+#team h1::after {
+    content: '';
+    background: #E9967A;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto;
+}
+
+
+.profile-pic {
+    margin-top: 20px;
+}
+
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic .img-box img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: all 0.5s;
+
+    /* Bị bể hình nếu như ko gắn cái ni vô */
+    backface-visibility: hidden;
+}
+
+.profile-pic .img-box:hover img{
+    filter: grayscale(0);
+    transform: scaleX(1) scaleY(1);
+}
+
+.img-box ul {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 0;
+    list-style: none;
+
+    position: absolute;
+    bottom: 0;
+    /* z-index: 2; */
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all 1s;
+    opacity: 0;
+}
+
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.profile-pic .img-box:hover ul{
+    opacity: 1;
+    transform: translate(-50%, 10%);
+
+}
+
+.profile-pic h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: salmon;
+}
+.profile-pic h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+/* GET IN TOUCH */
+#contact {
+    padding: 50px 0;
+    color: #eee;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/buidling.jpg);
+    background-size: cover;
+}
+
+#contact form {
+    padding: 15px;
+}
+
+.contact-form {
+    padding: 15px;
+}
+/* .form-control {
+    border-radius: ;
+} */
+::placeholder {
+    color: #999!important;
+}
+#contact h1::after {
+    content: '';
+    background: salmon;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto;
+}
+
+#contact .btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(247, 247, 247, 0.9);
+    border: none;
+    transition: all 0.2s;
+    box-shadow: 0 0px 0px #eee;
+}
+#contact .btn:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: black;
+    transform: translateY(-10px);
+}
+
+#contact .btn:active {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 7px #eee;
+}
+
+#contact input, textarea {
+    border: 1px solid #ccc;
+}
+
+/* #contact input:active {
+    box-shadow: 3px 3px 0px burlywood;
+
+} */
+
+.follow {
+    color: black;
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contact-info .fa {
+    margin: 10px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* FOOTER */
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    /* list-style: none; */
+    margin-bottom: 0;
+}
+
+#footer .container {
+    margin-top: 10px;
+}
+
+.footer-content li {
+    display: inline-block;
+    float: left;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+.footer-content li a {
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.footer-content::after {
+    content: "";
+    display: table;
+    clear: both;    
+}   
+
+.footer-content li:not(:last-child) {
+    border-right: 1px solid white;
+}
