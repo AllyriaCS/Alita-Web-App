@@ -5,8 +5,13 @@
     box-sizing: inherit;
 }
 
+/* html {
+    font-size: 62.5%;
+} */
+
 body {
     padding: 0.5rem;
+    /* line-height: 1.7; */
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -30,9 +35,11 @@ body {
 .u-margin-top-small {
     margin-top: 2rem;
 }
+
 .u-margin-top-medium {
     margin-top: 4rem;
 }
+
 /*------------------------ HEADER -------------------------*/
 .header {
     height: 75vh;
@@ -137,6 +144,7 @@ body {
     transition: all 0.3s;
 
 }
+
 .button--blue:hover {
     text-decoration: none;
     background: 0 0;
@@ -145,6 +153,7 @@ body {
     color: white;
     box-shadow: 0 1rem 2rem black;
 }
+
 .button--blue:active {
     transform: translateY(-0.4rem);
     box-shadow: 0 1rem 2rem black;
@@ -158,6 +167,22 @@ body {
 }
 
 .button--white:active {
+    transform: translateY(-0.4rem);
+}
+
+.button--news {
+    background-color: rgba(255, 255, 255, 0.699);
+    color: black;
+    transition: all 0.3s;
+}
+.button--news:hover {
+    transform: translateY(-0.8rem);
+    /* color: black; */
+    border: 1px solid rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.363);
+    text-decoration: none;
+}
+.button--news:active {
     transform: translateY(-0.4rem);
 }
 
@@ -236,37 +261,42 @@ main {
     text-shadow: 0px 5px 1rem rgba(0, 0, 0, 0.199);
     transform: skewY(-3deg);
 }
+
 .heading-secondary {
     padding: 0 6rem;
 }
+
 .heading-secondary>span {
     font-weight: 300;
     color: #777;
 }
+
 .heading-secondary>h2 {
     font-size: 2.5rem;
     font-weight: 700;
 }
+
 .heading-secondary>h2>span {
     border-bottom: 3px solid rgba(0, 0, 255, 0.6);
 }
 
 .col-lg-4 {
-    padding-left: 2.5px!important;
-    padding-right: 2.5px!important;
+    padding-left: 2.5px !important;
+    padding-right: 2.5px !important;
     border-radius: 0;
 }
 
 /* Welcome Part */
 .welcome .card {
-    border-radius: 0!important;
+    border-radius: 0 !important;
     position: relative;
 }
 
 .welcome .card img {
     transition: all .5s;
 }
-.welcome .card:hover img{
+
+.welcome .card:hover img {
     filter: blur(2px);
 }
 
@@ -281,28 +311,29 @@ main {
 .welcome .hero-carousel__slideOverlay {
     position: absolute;
     bottom: 50px;
-    background-color:  rgba(0, 0, 255, 0.8);
+    background-color: rgba(0, 0, 255, 0.8);
     padding: 2.3rem 4.5rem 2rem 6rem;
     opacity: 0;
     z-index: -1;
     transition: all .3s ease-in-out;
 }
 
-.welcome .hero-carousel__slideOverlay h3{
+.welcome .hero-carousel__slideOverlay h3 {
     font-size: 1.5rem;
     font-weight: 200;
 }
 
 /* Trending Part */
-.container-full .trending{
+.container-full .trending {
     padding: 0 6rem;
 }
 
 .trending .card {
     position: relative;
-    border: none!important;
+    border: none !important;
 
 }
+
 .trending .card .card-product__imgOverlay {
     list-style: none;
     width: 100%;
@@ -317,7 +348,7 @@ main {
 }
 
 .trending .card:hover .card-product__imgOverlay {
-    transform:  translate(-50%, 30%);
+    transform: translate(-50%, 30%);
     opacity: 1;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.5);
@@ -334,7 +365,7 @@ main {
 .trending .card-body {
     padding: 0 1.5rem !important;
     margin-top: 1rem;
-    border: none!important;
+    border: none !important;
 }
 
 .trending .card-body p {
@@ -352,8 +383,8 @@ main {
 
 .trending .card-text {
     margin-top: 1.3rem;
-    font-size: 1.3rem!important;
-    font-weight: 500!important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
 }
 
 .trending .card:hover .card-title {
@@ -374,11 +405,91 @@ main {
 .cover__text-box {
     text-align: center;
 }
+
 .cover__text-box h1 {
     font-size: 3rem;
 }
+
 .cover__text-1 {
     font-family: oswald;
     font-size: 2.5rem;
     font-weight: 100;
+}
+
+/* Latest News */
+.container-full .news {
+    padding: 0 6rem;
+}
+
+.news .card {
+    border: none;
+}
+
+.news .card-body__info {
+    list-style: none;
+}
+
+.news .card-body__info li {
+    display: inline-block;
+}
+
+.news .card-body__info li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.news a {
+    color: #777;
+    font-weight: 200;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+
+.news h4 {
+    font-family: "Oswald";
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+.news .card:hover h4 {
+    color: rgba(0, 0, 255, 0.9);
+}
+
+.news p {
+    color: rgba(119, 119, 119, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ALMOST DONE */
+.container-full .section-almost {
+    padding: 4rem;
+    z-index: 1;
+    font-family: "Roboto";
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+    background-position: cover;
+}
+.section-almost .container{
+    max-width: 1040px;
+    /* padding: 0 9rem; */
+    max-height: 400px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.418);
+}
+.section-almost .text-box {
+    padding: 3rem;
+    text-align: center;
+}
+.section-almost .text-box h4{
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+}
+
+/* FINISH */
+.section-finished {
+    margin-top: -5rem;
+    background-color: white;
+    height: 300px;
+    z-index: -2;
 }
