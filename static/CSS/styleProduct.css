@@ -142,7 +142,21 @@ body {
     background-color: rgba(0, 0, 255, 0.8);
     color: white;
     transition: all 0.3s;
+}
 
+.button--blues {
+    background-color: rgba(0, 0, 255, 0.8);
+    color: white;
+    transition: all 0.3s;
+}
+
+.button--blues:hover {
+    text-decoration: none;
+    background: 0 0; /*Trong suot*/
+    border: 1px solid rgba(0, 0, 255, 0.9);
+    transform: translateY(-0.3rem);
+    color: black;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.11);
 }
 
 .button--blue:hover {
@@ -151,12 +165,12 @@ body {
     border: 1px solid rgba(0, 0, 255, 0.9);
     transform: translateY(-0.8rem);
     color: white;
-    box-shadow: 0 1rem 2rem black;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.11);
 }
 
 .button--blue:active {
     transform: translateY(-0.4rem);
-    box-shadow: 0 1rem 2rem black;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.11);
 }
 
 .button--white:hover {
@@ -175,13 +189,15 @@ body {
     color: black;
     transition: all 0.3s;
 }
+
 .button--news:hover {
     transform: translateY(-0.8rem);
     /* color: black; */
     border: 1px solid rgba(0, 0, 255, 0.5);
-    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.363);
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
+
 .button--news:active {
     transform: translateY(-0.4rem);
 }
@@ -190,6 +206,12 @@ body {
     content: '';
     height: 100%;
     width: 100%;
+}
+
+.form-inline input:focus {
+    outline: none !important;
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+    border: 1px solid #7ed56fcc;
 }
 
 /*---------------- MAIN -------------------*/
@@ -462,24 +484,37 @@ main {
 }
 
 /* ALMOST DONE */
-.container-full .section-almost {
-    padding: 4rem;
-    z-index: 1;
+.section-almost {
+    margin: 2rem;
+    padding: 7rem 0;
     font-family: "Roboto";
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
-    background-position: cover;
+    /* background-image: linear-gradient(to right bottom, #2998ff, #5643fa); */
+    background-color: white;
+    box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
 }
-.section-almost .container{
-    max-width: 1040px;
-    /* padding: 0 9rem; */
-    max-height: 400px;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.418);
-}
-.section-almost .text-box {
-    padding: 3rem;
+
+.section-almost .container {
+    /* max-width: 1040px;
+    max-height: 400px; */
+    padding: 0;
     text-align: center;
 }
-.section-almost .text-box h4{
+
+.submit-form {
+    padding: 0.9rem 2rem;
+    margin-right: 2rem;
+}
+
+.section-almost .text-box {
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%); */
+}
+
+.section-almost .text-box h4 {
     text-transform: uppercase;
     font-size: 2.3rem;
     font-weight: 700;
@@ -488,8 +523,46 @@ main {
 
 /* FINISH */
 .section-finished {
-    margin-top: -5rem;
-    background-color: white;
-    height: 300px;
-    z-index: -2;
+    padding: 10rem 0 6rem 0;
+    margin-top: -6rem;
+    background-color: #003366;
+    color: rgb(255, 255, 255);
+
+    z-index: 1;
+    transform: translateY(-3rem);
+}
+
+.section-finished::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section-finished .cot {
+    float: left;
+    padding: 0 2rem;
+}
+
+.section-finished .cot:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.section-finished .cot ul {
+    list-style: none;
+}
+
+.section-finished .cot a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+.heading-tertiary {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.newsletter-form {
+    padding: 0.9rem 2rem;
+    margin-right: 2rem;
 }
